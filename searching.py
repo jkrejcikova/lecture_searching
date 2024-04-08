@@ -22,10 +22,22 @@ def read_data(file_name, field):
         else:
             return None
 
+def linear_search(sekvence, cislo):
+    i = 0
+    count = 0
+    list_of_pos = []
+    for index, number in enumerate(sekvence):
+        if cislo == number:
+            list_of_pos.append(index)
+            count = +1
+            i = i + 1
+            count = cislo.count
+    return {"positions":list_of_pos, "count":len(list_of_pos)}
+
 
 
 def main():
-    pass
+    slovnik = linear_search(sekvence=[2,5,12,2,5,4,7,36], cislo=2)
 
 
 if __name__ == '__main__':
